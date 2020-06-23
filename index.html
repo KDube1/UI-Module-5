@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Module 5 - Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#"><img src="img/scissors-3-256.png" style="width:30px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<br>
+
+<!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+<!-- Should show the name of your company with an image or logo -->
+<!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+<!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+<!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+<div class="container-md p-3 my-3 border bg-dark text-danger">
+    <div class="row p-0">
+        <div class="col">
+            <img src="img/scissors-3-256.png" class="img-fluid">
+        </div>
+        <div class="col">
+            <h1>Blade Barbershop</h1>
+            <p>123 Seasame Street, ON, Canada</p>
+            <p>"A cut above the rest."</p>
+        </div>
+    </div>
+</div>
+
+<div class="container p-3 my-3 border bg-dark text-white" id="services">
+    <div class="row p-0">
+        <div class="col">
+            <img src="img/barbers-pole-256.png" class="img-fluid">
+        </div>
+
+        <div class="col">
+            <h2>Services</h2>
+            <p>Select a service to see more information</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                    <input type="radio" name="showHaircut" id="sHaircut">Haircut
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="showDye" id="dHaircut"> Hair Dye
+                </label>
+            </div>
+
+            <div class="row p-1" id="haircutView">
+                <div class="col">
+                    <p>Select a number to view</p>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active ">
+                            <input type="radio" name="Hoptions" id="num1">Number 1
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="Hoptions" id="num2"> Number 2
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="Hoptions" id="num3"> Number 3
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row p-1" id="dyeView">
+                <div class="col">
+                    <p>Select a color to view</p>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active ">
+                            <input type="radio" name="Hoptions" id="blonde" >Blonde
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="Hoptions" id="blackColor" >Black
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="Hoptions" id="greyColor">Grey
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row p-1">
+                <div id="infoHere">
+                </div>
+            </div>
+
+            <div class="row p-1">
+                <button type="button" class="btn btn-danger" id="makeBooking">Create Booking</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="container p-2 my-3 border bg-dark text-white" id="bookingContainer">
+
+
+    <div class="row p-3">
+        <div class="col">
+            <img src="img/literature-256.png" class="img-fluid">
+        </div>
+
+        <div class = "col">
+        <h2>Booking</h2>
+        </div>
+    </div>
+    <div class="row p-1">
+
+        <div class="col">
+            <div class="form-group">
+                <label for="sel1">Select barber:</label>
+                <select class="form-control" id="sel1">
+                    <option>Joseph (Mon, Tues, Thurs)</option>
+                    <option>Levi (Mon, Wed, Fri)</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+                <label for="sel2">Date:</label>
+            <input type="text" class="form-control" id="sel2" placeholder="Click to select Date">
+
+            <div class="row p-1">
+
+            <div id="selectDateWarning">
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="row p-1">
+        <div class="col">
+            <label for="inputname">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Enter your full name">
+            <label for="inputNumber">Phone Number</label>
+            <input type="text" class="form-control" id="inputNumber" placeholder="Enter your phone number (xxx-xxx-xxxx)" data-toggle="tooltip" data-placement="top" title="Needed in case of emergency cancellation">
+            <div id="phoneWarning">
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="row p-3">
+        <div class="col">
+            <img src="img/credit-card-7-256.png" class="img-fluid">
+        </div>
+
+        <div class = "col">
+            <h2>Payment</h2>
+        </div>
+    </div>
+
+    <div class="row p-1">
+        <div class ="col">
+            <label for="inputCC">Credit Card Number</label>
+            <input type="text" class="form-control" id="inputCC" placeholder="Enter your credit card number (xxxx-xxxx-xxxx-xxxx)" data-toggle="tooltip" data-placement="top" title="We never share your payment info!">
+                <div id="creditWarning">
+                </div>
+            <label for="inputExp">Expiration Date</label>
+            <input type="text" class="form-control" id="inputExp" placeholder="Enter your expiration date (MM/YY)">
+            <div id="dateWarning">
+            </div>
+            <label for="inputSec">Security Code</label>
+            <input type="text" class="form-control" id="inputSec" placeholder="Enter the three digits on the back of the card (eg 123)">
+            <div id="codeWarning">
+            </div>
+            <br>
+            <button id="bookButton" type="button" class="btn btn-primary">Book</button>
+            <div id ="approved">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container p-3 my-3 border bg-dark text-white" id="about">
+    <div class="row p-3">
+
+        <div class="col">
+            <img src="img/conference-256.png" class="img-fluid">
+        </div>
+        <div class="col">
+            <h2>Who we are</h2>
+            <p>Our specialists have years of experience styling hair and our committed to making you look your best.</p>
+
+            <div class="row p-2">
+                <div class="col">
+                    <img src = "https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=" class = "img-fluid rounded-circle">
+                </div>
+                <div class="col">
+                    <img src = "https://media.istockphoto.com/photos/closeup-portrait-of-handsome-smartlooking-smiling-with-toothy-smile-picture-id951331990?k=6&m=951331990&s=612x612&w=0&h=JBN4c8AngCLJKRc36DAaJpQjn8xInBrUQnU253ky0jg=" class = "img-fluid rounded-circle">
+                </div>
+
+            </div>
+            <div class ="row p-2">
+                <div class = "col">
+                    <p>Joseph Joestar</p>
+                </div>
+                <div class = "col">
+                    <p>Levi Ackerman</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+barber pole https://www.iconsdb.com/white-icons/barbers-pole-icon.html
+scissors https://www.iconsdb.com/white-icons/scissors-3-icon.html
+heart https://www.iconsdb.com/white-icons/hearts-icon.html
+creditcard https://www.iconsdb.com/white-icons/credit-card-7-icon.html
+book https://www.iconsdb.com/white-icons/literature-icon.html
+people https://www.iconsdb.com/white-icons/conference-icon.html
+
+
+Haircut numbers https://i.pinimg.com/originals/c3/81/f8/c381f820775390f2575b708e28aff687.png
+
+black hair https://www.menshairstylestoday.com/wp-content/uploads/2018/03/Black-Men-Hairstyles.jpg
+
+blonde hair https://www.menshairstylestoday.com/wp-content/uploads/2016/03/Ash-Blonde-Hair-Men.jpg
+
+grey hair https://menhairstylesworld.com/wp-content/uploads/2019/04/04.-crop.jpg
+
+barber man1 https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=
+barber man2 https://media.istockphoto.com/photos/closeup-portrait-of-handsome-smartlooking-smiling-with-toothy-smile-picture-id951331990?k=6&m=951331990&s=612x612&w=0&h=JBN4c8AngCLJKRc36DAaJpQjn8xInBrUQnU253ky0jg=
+
+Top container borrowed from professor's github starter code.
+Head content borrowed from professor's github starter code.
+Nav Bar borrowed from professor's github starter code.
+https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/SEG3125-Module5-ValidatedService/index.html
+https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/SEG3125-Module4-Service/index.html
+
+Radio buttons modeled after official bootsrap documentation https://getbootstrap.com/docs/4.1/components/buttons/#checkbox-and-radio-buttons
+
+Datepicker and date restricter modeled after official API: https://jqueryui.com/datepicker/#date-range
+
+Tooltips modeled after official documentation https://getbootstrap.com/docs/4.1/components/tooltips/
+
